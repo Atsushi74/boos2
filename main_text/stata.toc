@@ -1,6 +1,5 @@
 v 3
-d Materials byA. Ohyama
-d The World Bank
+d Materials by A. Ohyama
 d 
 d https://github.com/Atsushi74/boss2/main_text
  
