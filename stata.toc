@@ -1,0 +1,6 @@
+v 1.0
+d Materials by A. Ohyama
+d 
+d https://github.com/Atsushi74/boss2
+ 
+p boss2
