@@ -1,0 +1,10 @@
+v 2.2.0
+d 'GITHUB': github package manager
+d 
+d search, install, and manage github packages
+d 
+d Distribution-Date:   20210603
+d License: MIT
+d 
+F boos_2sls_1.ado
+F boos_2sls_2.ado
