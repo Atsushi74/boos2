@@ -13,8 +13,8 @@ capture drop num_exper_upgrades_st_hat num_exper_upgrades_st_cum_hat upgrade_exp
  dlog_high_end_cap dlog_low_end_cap log_firm_total firm_age i.year_half_year  if  est_inc==1 , robust cluster(firmID)
 
 predict num_exper_upgrades_st_hat if e(sample)
-sort firmID year_half_year
-by firmID: gen num_exper_upgrades_st_cum_hat=sum(num_exper_upgrades_st_hat)
+sort newid year_half_year
+by newid: gen num_exper_upgrades_st_cum_hat=sum(num_exper_upgrades_st_hat)
 gen upgrade_exper_low_hat = num_exper_upgrades_st_cum_hat*fr_low_prod
 
 reg dlog_firm_total num_exper_upgrades_st_cum_hat   fr_low_prod upgrade_exper_low_hat u_eng_dummy  merchant_d   dlog_high_end_cap dlog_low_end_cap ///
