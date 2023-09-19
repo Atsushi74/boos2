@@ -15,8 +15,8 @@ dlog_high_end_cap dlog_low_end_cap log_firm_total firm_age i.year_half_year  if 
 
  
 predict temp_upgrade_hat if e(sample)
-sort firmID year_half_year
-by firmID: gen temp_upgrade_cum_hat=sum(temp_upgrade_hat)
+sort newid year_half_year
+by newid: gen temp_upgrade_cum_hat=sum(temp_upgrade_hat)
 
 reg dlog_firm_total temp_upgrade_cum_hat  fr_low_prod   u_eng_dummy  merchant_d  ///
 dlog_high_end_cap dlog_low_end_cap   log_firm_total  firm_age i.year_half_year  if  est_inc==1
