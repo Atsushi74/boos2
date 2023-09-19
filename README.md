@@ -4,7 +4,7 @@ Stata ado files for "Product Innovation, Product Diversification and Firm Growth
 ### Erratum
 Date: September 19, 2023
 
-Modified files: 
+Modified files: boos_2sls_1.ado, boos_2sls_2.ado, boos_2sls_A1.ado, boos_2sls_A2.ado
 
 There was a logical coding error in the subroutine that obtains the bootstrapped standard errors for Table 5, columns (3) and (4) in the main text and Table A7, columns (3) and (4) in the online appendix. The code was structured in such a way that, when we computed a particular cumulative sum in a bootstrap sample, we took the sum over all observations for a given firm, even if that firm was sampled multiple times in the bootstrap draw. The correct procedure would instead treat re-sampled firms as distinct “quasi-firms” and only compute the cumulative sum using the observations for each quasi-firm. We thank Isaiah Andrews and Jesse Shapiro for pointing this out to us. 
 
